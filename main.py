@@ -20,6 +20,7 @@ while interest not in validinterest:
 skill = ""
 while skill not in validskill:
   skill = input("ENTER SKILL LEVEL: PIONEER , EXPLORER , SCOUT , EXPERT: ").lower()
+
 today = date.today()
 attendancedate = today.strftime("%d/%m/%Y")
 
