@@ -23,7 +23,7 @@ while skill not in validskill:
 today = date.today()
 attendancedate = today.strftime("%d/%m/%Y")
 
-pupilnames = open("Pupil Names.txt","a")
+pupilnames = open("Register.txt","a")
 info = f"{pupilname} in {form} likes {interest} and they are a {skill}. Date:{attendancedate}\n"
 pupilnames.write(info)
 pupilnames.close()
