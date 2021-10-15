@@ -24,6 +24,6 @@ today = date.today()
 attendancedate = today.strftime("%d/%m/%Y")
 
 pupilnames = open("Register.txt","a")
-info = f"{pupilname} in {form} likes {interest} and they are a {skill}. Date:{attendancedate}\n"
+info = f"{pupilname} in {form} likes {interest} and they are a {skill}. Date: {attendancedate}\n"
 pupilnames.write(info)
 pupilnames.close()
