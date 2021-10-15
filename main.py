@@ -1,3 +1,5 @@
+from datetime import date
+
 pupilname = input("ENTER FULL NAME: ")
 
 validforms = ["1C","1F","1H","1M","1O","1S","2C","2F","2H",
@@ -18,8 +20,8 @@ while interest not in validinterest:
 skill = ""
 while skill not in validskill:
   skill = input("ENTER SKILL LEVEL: PIONEER , EXPLORER , SCOUT , EXPERT: ").lower()
-
-attendancedate = input("ATTENDANCE DATE: ")
+today = date.today()
+attendancedate = today.strftime("%d/%m/%Y")
 
 pupilnames = open("Pupil Names.txt","a")
 info = f"{pupilname} in {form} likes {interest} and they are a {skill}. Date:{attendancedate}\n"
